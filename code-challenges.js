@@ -87,7 +87,8 @@ var stringWithVowels2 = "ILoveJavaScript"
 //put it back together
 /*
 const noVowels = (strings) =>{
-    let newArray = ""
+    let newArray = str.toLowercase()
+    let noVow = ""
     for(let i = 0; i<stringWithVowels1.length; i++){
         let lowerCase = strings[i].toLowerCase
         if(strings[i] !== "a" && lowerCase !== "e" && lowerCase !== i && lowerCase !== "o" && lowerCase !=="u"){
@@ -113,14 +114,17 @@ var refactorTester3 = "IAmACodingMaster"
 
 //change return to show type of input
 const noVowels = (strings) =>{
+    let lowerCaseStr = typeof str === string? str.tlLowerCas() : str;
     let newArray = ""
     for(let i = 0; i<stringWithVowels1.length; i++){
         let lowerCase = strings[i].toLowerCase
-        if(strings[i] !== "a" && lowerCase !== "e" && lowerCase !== i && lowerCase !== "o" && lowerCase !=="u"){
-            newArray+=lowerCase
+        if(lowerCaseStr[i] !== "a" && lowerCaseStr !== "e" && lowerCaseStr !== i && lowerCaseStr !== "o" && lowerCaseStr !=="u"){
+            newArray+=lowerCaseStr
+        }else{
+            return `not a string`
         }
     }
-    return newArray.typeOf
+    return newArray
 
 
 }
